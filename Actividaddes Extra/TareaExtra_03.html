@@ -3,7 +3,7 @@
 <html lang="en">
 <head><meta charset="utf-8"/>
 <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Tarea_5</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>TareaExtra_03</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 <style type="text/css">
     pre { line-height: 125%; }
 td.linenos .normal { color: inherit; background-color: transparent; padding-left: 5px; padding-right: 5px; }
@@ -7511,13 +7511,13 @@ a.anchor-link {
 <!-- End of mermaid configuration --></head>
 <body class="jp-Notebook" data-jp-theme-light="true" data-jp-theme-name="JupyterLab Light">
 <main>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=be2c362b">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0e3626cc">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h1 id="Tarea-05:-Ejercicios-Unidad-02-B-M%C3%A9todo-de-Newton-y-de-la-Secante">Tarea 05: Ejercicios Unidad 02 B Método de Newton y de la Secante<a class="anchor-link" href="#Tarea-05:-Ejercicios-Unidad-02-B-M%C3%A9todo-de-Newton-y-de-la-Secante">¶</a></h1><h3 id="CONJUNTO-DE-EJERCICIOS">CONJUNTO DE EJERCICIOS<a class="anchor-link" href="#CONJUNTO-DE-EJERCICIOS">¶</a></h3><ul>
+<h1 id="%5BActividad-extracurricular-03%5D-Tipograf%C3%ADa-matem%C3%A1tica">[Actividad extracurricular 03] Tipografía matemática<a class="anchor-link" href="#%5BActividad-extracurricular-03%5D-Tipograf%C3%ADa-matem%C3%A1tica">¶</a></h1><ul>
 <li>Mateo Molina Moises Estrella</li>
 </ul>
 <p><strong>Link Repositorio:</strong> <a href="https://github.com/R3LM15/MetodosNumericos_MateoMolina">https://github.com/R3LM15/MetodosNumericos_MateoMolina</a></p>
@@ -7525,786 +7525,184 @@ a.anchor-link {
 </div>
 </div>
 </div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=6a587d84">
+<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=0acac645">
 <div class="jp-Cell-inputWrapper" tabindex="0">
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol>
-<li>Sea 𝑓(𝑥) = $ -x^3 -cos(x) $ y $𝑝_0 = −1$. Use el método de Newton y de la Secante para encontrar 𝑝2. ¿Se podría usar $𝑝_0$ = 0?</li>
-</ol>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f5677e8c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<h3 id="M%C3%A9todo-de-Newton">Método de Newton<a class="anchor-link" href="#M%C3%A9todo-de-Newton">¶</a></h3><p>$$ x_n = x_{n-1} - \frac{f(x_{n-1})}{f'(x_{n-1})}  , n \ge  1$$</p>
-<ul>
-<li>Dado $p_0$ = -1</li>
-</ul>
-<p>𝑓(x)  = $ -x^3 -cos(x) $</p>
-<p>𝑓'(x) = $ -3x^2 + sen(x) $</p>
-<p>Iteración 1:  $$ x_1 = -1 - \frac{0.45969}{-3.84147} = -0.88033$$</p>
-<p>𝑓(-1)  = $ -(-1)^3 -cos(-1) = 0.45969$</p>
-<p>𝑓'(-1) = $ -3(-1)^2 + sen(-1) = -3.84147$</p>
-<p>Iteración 2:  $$ x_2 = -0.88033 - \frac{0.04534}{-3.09589} = -0.86568$$</p>
-<p>𝑓(-0.88033)  = $ -(-0.88033)^3 -cos(-0.88033) = 0.04534$</p>
-<p>𝑓'(-0.88033) = $ -3(-0.88033)^2 + sen(-0.88033) = -3.09589$</p>
-<p>Por lo tanto sabemos que $p_2 = -0.86568$</p>
-<ul>
-<li>Dado $p_0$ = 0</li>
-</ul>
-<p>𝑓(0)  = $ -(0)^3 -cos(0) = -1 $</p>
-<p>𝑓'(0) = $ -3(0)^2 + sen(0) = 0 $</p>
-<p>El método de Newton falla, porque dividiríamos por cero.</p>
-<h3 id="M%C3%A9todo-de-la-Secante">Método de la Secante<a class="anchor-link" href="#M%C3%A9todo-de-la-Secante">¶</a></h3><ul>
-<li>Dado $p_0$ = -1 y eleguido $p_1$ = -1.5</li>
-</ul>
-<p>$$ x_n = x_{n-1} - f(x_{n-1}) * \frac{x_{n-1} - x_{n-2}}{f(x_{n-1})-f(x_{n-2})}  $$</p>
-<p>Cálculos:</p>
-<p>𝑓(-1.5)  = $ -(-1.5)^3 -cos(-1.5) = 3.30426 $</p>
-<p>𝑓(-1)  = $ -(-1)^3 -cos(-1) = 0.45969 $</p>
-<p>$$ x_2 = -1.5 - 3.30426 * \frac{-1.5 - (-1)}{3.30426-0.45969} = -0.91919 $$</p>
-<p>Por lo tanto sabemos que $p_2 = -0.91919$</p>
-<ul>
-<li>Dado $p_0$ = 0 y eleguido $p_1$ = 1</li>
-</ul>
-<p>𝑓(0)  = $ -(0)^3 -cos(0) = -1 $</p>
-<p>𝑓(1)  = $ -(1)^3 -cos(1) = -1.54030 $</p>
-<p>$$ x_2 = 1 - (-1.5403) * \frac{1 - 0}{-1.5403-(-1)} = -1.85082$$</p>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b5cfd2c5">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol start="2">
-<li><p>Encuentre soluciones precisas dentro de $10^{-4}$ para los siguientes problemas.</p>
-<p>a. $x^{3} - 2x^{2}-5 = 0$ , [1,4]</p>
-<p>b. $x^{3} - 3x^{2} - 1 = 0$, [-3,-2]</p>
-<p>c. $ x-cosx=0 $, [0,$\pi$/2]</p>
-<p>d. $ x-0.8-0.2senx =0 $,[0,$\pi$/2]</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=8deafd4f">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [84]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-<span class="c1">## metodo de secante (Dos puntos)</span>
-<span class="k">def</span> <span class="nf">secante</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-4</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
-    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">max_iter</span><span class="p">):</span>
-        <span class="n">fx0</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x0</span><span class="p">)</span>
-        <span class="n">fx1</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x1</span><span class="p">)</span>
-
-        <span class="k">if</span> <span class="n">fx1</span> <span class="o">-</span> <span class="n">fx0</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"División por cero en iteración."</span><span class="p">)</span>
-
-        <span class="n">x2</span> <span class="o">=</span> <span class="n">x1</span> <span class="o">-</span> <span class="n">fx1</span> <span class="o">*</span> <span class="p">(</span><span class="n">x1</span> <span class="o">-</span> <span class="n">x0</span><span class="p">)</span> <span class="o">/</span> <span class="p">(</span><span class="n">fx1</span> <span class="o">-</span> <span class="n">fx0</span><span class="p">)</span>
-
-        <span class="k">if</span> <span class="nb">abs</span><span class="p">(</span><span class="n">x2</span> <span class="o">-</span> <span class="n">x1</span><span class="p">)</span> <span class="o">&lt;</span> <span class="n">tol</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">x2</span>  <span class="c1"># raíz aproximada</span>
-
-        <span class="n">x0</span><span class="p">,</span> <span class="n">x1</span> <span class="o">=</span> <span class="n">x1</span><span class="p">,</span> <span class="n">x2</span>
-
-    <span class="nb">print</span><span class="p">(</span><span class="s2">"No converge dentro del número máximo de iteraciones."</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=f0182ffd">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [85]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">#a)</span>
-<span class="c1"># Definir la función f(x)</span>
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">5</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">secante</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="mi">4</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"a | Raíz aproximada:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-
-<span class="c1">#--------------------------------------------------------------</span>
-
-<span class="c1">#b)</span>
-<span class="c1"># Definir la función f(x)</span>
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">-</span><span class="mi">3</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">1</span>
-
-<span class="n">b</span> <span class="o">=</span> <span class="n">secante</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="o">=-</span><span class="mi">3</span><span class="p">,</span> <span class="n">x1</span><span class="o">=-</span><span class="mi">2</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"b | Raíz aproximada:"</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-
-<span class="c1">#--------------------------------------------------------------</span>
-
-<span class="c1">#c)</span>
-<span class="c1"># Definir la función f(x)</span>
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">-</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="n">c</span> <span class="o">=</span> <span class="n">secante</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"c | Raíz aproximada:"</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-
-<span class="c1">#--------------------------------------------------------------</span>
-
-<span class="c1">#d)</span>
-<span class="c1"># Definir la función f(x)</span>
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">-</span><span class="mf">0.8</span><span class="o">-</span><span class="mf">0.2</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="n">d</span> <span class="o">=</span> <span class="n">secante</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="mi">2</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"d | Raíz aproximada:"</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>a | Raíz aproximada: 2.690647447883773
-b | Raíz aproximada: 3.103803339266244
-c | Raíz aproximada: 0.739085133034638
-d | Raíz aproximada: 0.964333884548886
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c1de7d43">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol start="3">
-<li><p>Use los 2 métodos en esta sección para encontrar las soluciones dentro de $10^{-5}$ para los siguientes problemas.</p>
-<p>a. $3x-e^{x}=0$ para $1 \le  x \le 2$</p>
-<p>b. $ 2x +3cosx - e^{x} =0 $ para $ 1 \le x \le 2  $</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=e41c4b90">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [86]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">from</span> <span class="nn">scipy.optimize</span> <span class="kn">import</span> <span class="n">newton</span>
-<span class="c1">## A)</span>
-
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">3</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">fprime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">3</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="n">x1</span><span class="o">=</span><span class="mi">1</span>
-<span class="n">x0</span><span class="o">=</span><span class="mi">2</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> a)"</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">fprime</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"| Newton-Raphson | Raíz aproximada:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">secante</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"| Secante | Raíz aproximada:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-
-<span class="c1">## --------------------------------------------------------------------</span>
-<span class="c1">## B)</span>
-
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">2</span><span class="o">*</span><span class="n">x</span> <span class="o">+</span> <span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span>  <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">fprime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">2</span> <span class="o">-</span> <span class="mi">3</span><span class="o">*</span><span class="n">np</span><span class="o">.</span><span class="n">sin</span><span class="p">(</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="n">x1</span><span class="o">=</span><span class="mi">1</span>
-<span class="n">x0</span><span class="o">=</span><span class="mi">2</span>
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> b)"</span><span class="p">)</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">fprime</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"| Newton-Raphson | Raíz aproximada:"</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-
-<span class="n">b</span> <span class="o">=</span> <span class="n">secante</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">x1</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"| Secante | Raíz aproximada:"</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>
- a)
-| Newton-Raphson | Raíz aproximada: 1.5121345516685927
-| Secante | Raíz aproximada: 0.6190612866166071
-
- b)
-| Newton-Raphson | Raíz aproximada: 1.2397146979752176
-| Secante | Raíz aproximada: 1.239714698599015
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=650eab7b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol start="4">
-<li>El polinomio de cuarto grado
-$$𝑓(𝑥) = 230𝑥^{4} + 18𝑥^{3} + 9𝑥^{2} − 221𝑥 − 9$$
-tiene dos ceros reales, uno en [−1,0] y el otro en [0,1]. Intente aproximar estos ceros dentro de $10^{-6}$ con</li>
-</ol>
-<p>a. El método de la secante (use los extremos como las estimaciones iniciales)</p>
-<p>b. El método de Newton (use el punto medio como estimación inicial)</p>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=28445336">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [87]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1">## A </span>
-
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">230</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">4</span><span class="o">+</span><span class="mi">18</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span> <span class="o">+</span><span class="mi">9</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span><span class="o">-</span><span class="mi">221</span><span class="o">*</span><span class="n">x</span><span class="o">-</span><span class="mi">9</span>
-
-<span class="k">def</span> <span class="nf">fprime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="mi">920</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">3</span><span class="o">+</span><span class="mi">54</span><span class="o">*</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span><span class="mi">18</span><span class="o">*</span><span class="n">x</span> <span class="o">-</span><span class="mi">221</span>
-
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> a)"</span><span class="p">)</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">secante</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="o">=-</span><span class="mi">1</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"| Secante | Raíz aproximada:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">secante</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="n">tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"| Secante | Raíz aproximada:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-
-<span class="c1">## --------------------------------------------------------------------</span>
-<span class="c1">## B)</span>
-
-
-<span class="nb">print</span><span class="p">(</span><span class="s2">"</span><span class="se">\n</span><span class="s2"> b)"</span><span class="p">)</span>
-<span class="n">x0</span> <span class="o">=</span> <span class="o">-</span> <span class="mf">0.5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">fprime</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"| Newton-Raphson | Raíz aproximada:"</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-<span class="n">x0</span> <span class="o">=</span> <span class="mf">0.5</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">fprime</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"| Newton-Raphson | Raíz aproximada:"</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>
- a)
-| Secante | Raíz aproximada: -0.040659288315725135
-| Secante | Raíz aproximada: -0.04065928831557162
-
- b)
-| Newton-Raphson | Raíz aproximada: -0.04065928831575899
-| Newton-Raphson | Raíz aproximada: -0.040659288315758865
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=c127718d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol start="5">
-<li><p>La funcion $f(x)=tan(\pi x)-6 $ tiene cero en $(1 / \pi) $ arcontangente $ 6 \approx 0.447431543$. Sea $p_0 = 0$ y $p_1 = 0.48$ y use 10 iteraciones en cada uno de los siguientes métodos para aproximar esta raíz. ¿Cuál método es más eficaz y por qué?</p>
-<p>a. método de bisección</p>
-<p>b. método de Newton</p>
-<p>c. método de la secante</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs" id="cell-id=08050e53">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [88]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="c1"># Algoritmo de bisección</span>
-<span class="k">def</span> <span class="nf">bisection_method</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">a</span><span class="p">,</span> <span class="n">b</span><span class="p">,</span> <span class="n">tol</span><span class="o">=</span><span class="mf">1e-5</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">):</span>
-    <span class="c1"># Verificar que los signos de f(a) y f(b) sean opuestos</span>
-    <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">b</span><span class="p">)</span> <span class="o">&gt;=</span> <span class="mi">0</span><span class="p">:</span>
-        <span class="nb">print</span><span class="p">(</span><span class="s2">"No se puede aplicar el método de bisección. Los signos de f(a) y f(b) deben ser opuestos."</span><span class="p">)</span>
-        <span class="k">return</span> <span class="kc">None</span>
-    
-    <span class="n">iter_count</span> <span class="o">=</span> <span class="mi">0</span>
-    <span class="k">while</span> <span class="p">(</span><span class="n">b</span> <span class="o">-</span> <span class="n">a</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2.0</span> <span class="o">&gt;</span> <span class="n">tol</span><span class="p">:</span>
-        <span class="c1"># Punto medio</span>
-        <span class="n">c</span> <span class="o">=</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2.0</span>
-        <span class="c1"># Verificar si el punto medio es una raíz</span>
-        <span class="k">if</span> <span class="n">f</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="k">return</span> <span class="n">c</span>
-        <span class="c1"># Actualizar el intervalo</span>
-        <span class="k">elif</span> <span class="n">f</span><span class="p">(</span><span class="n">c</span><span class="p">)</span> <span class="o">*</span> <span class="n">f</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
-            <span class="n">b</span> <span class="o">=</span> <span class="n">c</span>
-        <span class="k">else</span><span class="p">:</span>
-            <span class="n">a</span> <span class="o">=</span> <span class="n">c</span>
-        
-        <span class="n">iter_count</span> <span class="o">+=</span> <span class="mi">1</span>
-        <span class="k">if</span> <span class="n">iter_count</span> <span class="o">&gt;</span> <span class="n">max_iter</span><span class="p">:</span>
-            <span class="nb">print</span><span class="p">(</span><span class="s2">"Se alcanzó el número máximo de iteraciones."</span><span class="p">)</span>
-            <span class="k">return</span> <span class="kc">None</span>
-    
-    <span class="k">return</span> <span class="p">(</span><span class="n">a</span> <span class="o">+</span> <span class="n">b</span><span class="p">)</span> <span class="o">/</span> <span class="mf">2.0</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=8ee43ea1">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [89]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">tan</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">x</span><span class="p">)</span> <span class="o">-</span> <span class="mi">6</span>
-
-<span class="k">def</span> <span class="nf">fprime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">pi</span><span class="o">/</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">**</span> <span class="mi">2</span><span class="p">)</span>
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">bisection_method</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mf">0.48</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"A) | Bisección | Raíz aproximada:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-
-<span class="n">x0</span> <span class="o">=</span> <span class="mf">0.48</span>
-<span class="n">b</span> <span class="o">=</span> <span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">fprime</span><span class="p">,</span> <span class="n">maxiter</span><span class="o">=</span><span class="mi">10</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"B) | Newton-Raphson | Raíz aproximada:"</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-
-
-<span class="n">c</span> <span class="o">=</span> <span class="n">secante</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="mf">0.48</span><span class="p">,</span> <span class="n">max_iter</span><span class="o">=</span><span class="mi">100</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"C) | Secante | Raíz aproximada:"</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>A) | Bisección | Raíz aproximada: 0.44742919921874996
-B) | Newton-Raphson | Raíz aproximada: 0.4474315432887487
-No converge dentro del número máximo de iteraciones.
-C) | Secante | Raíz aproximada: None
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=8f73813d">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li><p>Bisección es seguro pero lento, es precisa, pero le llega a tomar más iteraciones que la mayoría.</p>
-</li>
-<li><p>Newton es el más eficaz si conoces la derivada y eliges un punto de forma lógica.</p>
-</li>
-<li><p>Secante es excelente cuando no tienes derivada pero puede volverse inestable si los puntos iniciales están mal elegidos, como en este caso.</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=f48c4c98">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol start="6">
-<li><p>La función descrita por $f(x) = ln(x^{2}+1) -e^{0.4x} cos(𝜋𝑥)$ tiene un número infinito de ceros.</p>
-<p>a. Determine, dentro de $10^{-6}$, el único cero negativo.</p>
-<p>b. Determine, dentro de $10^{−6}$, los cuatro ceros positivos más pequeños.</p>
-<p>c. Determine una aproximación inicial razonable para encontrar el enésimo cero positivo más pequeño de 𝑓. [Sugerencia: Dibuje una gráfica aproximada de 𝑓.]</p>
-<p>d. Use la parte c) para determinar, dentro de $10^{−6}$, el vigesimoquinto cero positivo más pequeño de 𝑓.</p>
-</li>
-</ol>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=754e1e8b">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [90]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="c1"># Definir la función f(x)</span>
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">0.4</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
-
-<span class="c1"># Definir el rango de valores para x</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="p">,</span> <span class="mi">7</span><span class="p">,</span> <span class="mi">800</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="c1"># Graficar la función con la línea de puntos</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">'$f(x) = ln(x^</span><span class="si">{2}</span><span class="s1">+1) -e^</span><span class="si">{0.4x}</span><span class="s1"> cos(𝜋𝑥)$'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'cyan'</span><span class="p">)</span>
-
-<span class="c1"># Agregar título y etiquetas</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Gráfico de f(x)'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'f(x)'</span><span class="p">)</span>
-
-<span class="c1"># Mostrar la cuadrícula y los ejes</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>  <span class="c1"># Eje X</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>  <span class="c1"># Eje Y</span>
-
-<span class="c1"># Agregar leyenda</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-
-<span class="c1"># Mostrar la gráfica</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>  
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
-<img alt="No description has been provided for this image" class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjUAAAHHCAYAAABHp6kXAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjMsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvZiW1igAAAAlwSFlzAAAPYQAAD2EBqD+naQAAXdlJREFUeJzt3Xl8E3X+x/FX0paWQluucslVkEtAEAQWdRWU258rLi7isQuoiC6KiOiKN154LeKyCOKBrsfqKuruoiKIIKycciMghwWRSznL2abN/P74Jj3sQY8kk0zez8cjj5kmk5lPMk3mk+/psizLQkRERCTCue0OQERERCQQlNSIiIiIIyipEREREUdQUiMiIiKOoKRGREREHEFJjYiIiDiCkhoRERFxBCU1IiIi4ghKakSkQr788kuefPJJTp48aXcoIhLllNSISLlt27aNgQMHUqdOHRITEws9Pnv2bDp06EBCQgIul4sjR44wdOhQmjRpEvpgixCMWIp6zX79+/dn+PDhZd7ntGnTaNSoEZmZmQGMVMR5lNSIRIn09HRuv/12WrRoQWJiIomJiZxzzjmMHDmSdevWlXl/mZmZDBo0iDvuuIObb7650OMHDx5k0KBBVK5cmSlTpvDWW29RpUqVQLyUsFXSa/7mm2+YM2cOf/nLX8q836FDh5KVlcXLL78c6JBFHMWluZ9EnG/WrFlcc801xMbGcv3119O+fXvcbjebN2/mo48+YufOnaSnp9O4ceNS73PVqlV888033HHHHUU+Pnv2bPr168fcuXPp2bNn7v0ejwev10t8fHyFX1dFDR06lAULFrBjx46A7K+41wwwYMAATp06xRdffFGuff/lL3/h/fffJz09HZfLFYhwRRwn1u4ARCS4tm/fzuDBg2ncuDHz5s2jXr16BR5/5plneOmll3C7Sy64PXHiRIGSlo4dO9KxY8dit//5558BqFatWoH74+LiyvgKIkdxr/nnn3/m008/Zdq0aeXe96BBg3j22WeZP38+l156aUXCFHEsVT+JONyzzz7LiRMnmDFjRqGEBiA2NpZRo0bRsGHD3PuGDh1K1apV2b59O/379ycpKYnrr78egEWLFvGHP/yBRo0aER8fT8OGDbnrrrs4depU7vO7d+/OkCFDAOjcuTMul4uhQ4fm7vvX7Vi8Xi8vvvgi7dq1IyEhgdTUVPr27cu3336bu012djaPP/44zZo1Iz4+niZNmnD//feXup3JJ598Qtu2bUlISKBt27Z8/PHHRW7n9XqZNGkSbdq0ISEhgTp16jBixAgOHz5c4v5Les2ffvop2dnZBUpvLMuiR48epKam5iZDAFlZWbRr145mzZpx4sSJ3Ps7depEjRo1+Pe//12q1ysSjVRSI+Jws2bN4uyzz6Zr165lel52djZ9+vThoosu4vnnn89tCPzBBx9w4sQJbrvtNmrWrMmyZcuYPHkyP/30Ex988AEADzzwAC1btmT69Ok89thjpKWl0axZs2KPddNNN/HGG2/Qr18/br75ZrKzs1m0aBFLly7l/PPPB+Dmm2/mzTff5Oqrr+buu+9m2bJlTJgwgU2bNhWboPjNmTOHgQMHcs455zBhwgQOHjzIsGHDaNCgQaFtR4wYwRtvvMGwYcMYNWoU6enp/P3vf2f16tV88803xZY0lfSaFy9eTM2aNQtU77lcLl5//XXOPfdcbr31Vj766CMAHnnkEb777jsWLFhQqA1Sx44d+eabb0p8rSJRzRIRxzp69KgFWAMGDCj02OHDh61ffvkl93by5Mncx4YMGWIB1n333VfoecePHy903xNPPGG5XC5r586duffNmDHDAqwVK1YU2HbIkCFW48aNc//+6quvLMAaNWpUof16vV7LsixrzZo1FmDdfPPNBR4fO3asBVhfffVVMe+A0aFDB6tevXrWkSNHcu+bM2eOBRSIZdGiRRZgvfPOOwWeP3v27CLv/7XiXvNFF11kderUqcjnvPzyyxZgvf3229bSpUutmJgYa/To0UVue8stt1iVK1cuMQaRaKbqJxEHy8jIAKBq1aqFHuvevTupqam5tylTphTa5rbbbit0X/7SA6/Xy+nTp+nTpw+WZbF69eoyxzhz5kxcLhePPPJIocf8DWI/++wzAMaMGVPg8bvvvhsw1TvF2bt3L2vWrGHIkCGkpKTk3t+rVy/OOeecAtt+8MEHpKSk0KtXLw4cOJB769SpE1WrVmX+/Pllfn1gekVVr169yMduueUW+vTpwx133MEf//hHmjVrxlNPPVXkttWrV+fUqVMaE0ikGKp+EnGwpKQkAI4fP17osZdffpljx46xf/9+brjhhkKPx8bGFlk9s2fPHp544gn++9//snfvXnJycnIfO3r0aJlj3L59O/Xr16dG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880MGjSIe+65B4DatWtz7bXX8p///IdRo0bx+eef07dvX84//3wAqlevTtu2bcnIyCj2XL/11lsMHTqULVu28PrrrzNixAimT59OcnIyGRkZ9OzZk7i4OIYPH05KSgqdOnVi+fLludXWZzoHWVlZnDp1ioULF+bOFxZt5s6da3cIkk8kng8L+FevXpCYSIvly/ksSG1dT54s3RU57JKakSNHsmHDhgLF2uU1btw4xowZk/t3RkYGDRs2pHfv3iQnJxfY9vTp0+zatYuqVauSkJDACaCBTRPvZXi9VCnD9hs3bgTgN7/5DVWqVMHj8ZCUlFToNQIMGjSIZ599lueee47Zs2fTtWvXAo+npqYCEBMTU+j5ycnJNG7cuGwvBtNot2PHjrn727x5M1deeSVNmzbN3Wbv3r20aNEid5vyvIY+ffqQnZ1NTk4Oa9eupX379sTExBQZ04QJEwo0lD116hTffvst9957b+59GzZsOGNCUrly5SJjLOl9HDduHM8++2yJ+/3uu+9o1apV7t87d+5k/vz5LF26tEB7npycHBo2bJh7jMGDBzN48OAi97l27dpC991666256/mrcv/0pz/xpz/9KffYX375JStXrizytW7evJk1a9bwzjvvFHg8KSmJ7OxskpOTGTBgAOPGjWP9+vVcffXVDBw4kOrVqwPFn+uRI0cyffp0+vfvz/Hjx+nevTutW7cusM0VV1xBtWrVmDNnDi+//HKBx0o6B2A+85UrV+biiy8mISGhyPfMqTweD3PnzqVXr16azDMMRPL5WAsciIujsmVxb6dOVA7ScUr7gzOskprbb7+dWbNmsXDhQho0aJB7f926dcnKyuLIkSMFSmv2799P3bp1i91ffHw88fHxhe6Pi4sr9I+Tk5ODy+XC7XabW8VfTrmV9fjr1q3j7LPPJikpCTBf5keOHClyNuTZs2ezefNmcnJyqFevXqFtjhw5AphSsF8/9tRTT/HUU0+VGMvGjRsLJQJr167l8ssvz93funXrGDduXIH9r127losvvjj3voq8Bn/VkP98FuW2227LLWkAuP766xk4cGCBxucNGjQ444zS/v+XXyvpfRw7dizDhg0rcb9NmzYt8Lz169dTo0aNAu2O/CpXrhzUma/XrVtHpUqV6NixY5GPb9q0ibi4OFq1alUgjk2bNtGuXTvcbjdjx47l0ksvZd68ebz44ouMGzeOb7/9lrS0tBLP9T/+8Q9eeOEFPvvsMy677LIit+nSpQuVKlUq0/8ymHPncrmK/D6IFtH82sNRJJ6P2b5lL5eL5CDGXtr3JSySGsuyuOOOO/j4449ZsGABaWlpBR7v1KkTcXFxzJs3j4EDBwLw/fff8+OPP9KtW7egxJQIHC/ltl6vl4yMDJKTkwNycUk88yYFrFmzJrcRLsB5551XZK+PVatWMWjQIF577TXeeOMNHnroIT744IMC22zYsIEGDRrkVgvld+uttzJo0KASY/l1w9Rjx47xww8/5PZ8Onr0KDt27OC8884r9BpGjRoVkNdQGjVq1MhtswUmMahduzZnn312mfdVlJLex9TU1NxShNKKi4vj2LFj1K9fv1DVabDFxcWRnZ3NyZMnizx2UlISOTk5eDye3B8R6enpfPzxx/znP//J3e7ss8+mY8eO3HnnnSQnJ7Nx40bS0tKKPddr165l586ddO7cmdtvv53Ro0dz9OhRUlLy+lakp6dTq1YtPv7440I90ko6ByISGJ/7lv9naxT5WGHgtttus1JSUqwFCxZYe/fuzb2dPHkyd5tbb73VatSokfXVV19Z3377rdWtWzerW7duZTrO0aNHLcA6evRoocdOnTplbdy40Tp16lSZ48/JybEOHz5s5eTklPm5gdC1a1frySefzP173bp1VmxsrHXo0KHc+9LT0626detaEyZMsCzLspYuXWq5XC5r5cqVBfY1ZMgQ68YbbwxYbIsWLbJiY2Ot06dPW5ZlWQsXLrRiY2MLvM87duywACs9PT0gr8Hj8VgrVqywPB5PqeO85JJLrBkzZpxxu2PHjlmrV6+2Vq9ebQHWxIkTrdWrV1s7d+4ssF2g38eDBw9aNWvWtAYOHGitWbPG2rp1q/X5559bd955Z8COUZwDBw5Y1atXt/70pz9ZGzdutL777jtr6tSp1pYtWyzLsqwjR45YNWrUsEaPHm1t377dmjdvntW6dWvrj3/8o2VZlvXMM89YM2bMsJYuXWpt3LjRuuuuu6y6devmntuizvWaNWuspk2bWg8++KBlWZaVmJhoffzxx9Ynn3xiWZZl7du3z9q9e7d1//33W9nZ2Vb9+vWt//73v9aiRYty93Gmc1CRz3yky8rKsj755BMrKyvL7lDEitzzccKyrFjLsrAs64cgH6uk63d+YZHUYNoaFbrlv8icOnXK+vOf/2xVr17dSkxMtK666ipr7969ZTqOE5OanJwcKzEx0Zo1a1aB+7t06WJNmzbNsixzQWzZsqU1YsSIAtv079/f6tOnT+7fp06dslJSUqwlS5YELL7Jkydbbdu2LfB3mzZtCmzz8ccfW9WqVSv03PK8BssKblIzf/78Iv9XhwwZkrtNMN5Hy7KsZcuWWd27d7eSk5OtpKQkq2PHjtaLL74Y0GMU53//+5/VrVs3q0qVKlb16tWtfv36WUeOHMl9fOHChVbHjh2thIQEq2nTptaECROs7Oxsy7Isa/z48VaLFi2shIQEq1atWtaVV15pbdy4scD+859ry7KsqVOnWm3btrUOHz5sWZZldevWzerXr1/u53Py5MlW06ZNre+++86yLMt6/vnnrVatWlm7d++2LKt050BJTeRdRJ0qUs/HPMskEQ0sy/IG+VgRldSEihOTmuLMmjXLat26dZlieumll6xevXoFMaqyKc9rsKzyJTWBFG7vYzg402ekvOe6OKU5B0pqIu8i6lSRej4esUwScV0IjlXapCYs2tRI4F1++eVs3bqV3bt3l3qqgLi4OCZPnhzkyEqvPK8hHITb+xgJAn2udQ5Egm+hb3mJrVEUpKTGwUaPHl2m7W+++ebgBFIBZX0N4SAc38dIEMhzrXMgElw5gL8v5kV2BvIrYTmisIiIiISvTZgBaqsCrc6wbSgpqREREZEy+da37ER4JRLhFIuIiIhEgBW+5fm2RlGYkhoREREpE39JTWdboyhMSY2IiIiUmgcz5xOY6qdwoqTmVyzLsjsEEQkBfdZFymcrkIlpJNzM5lh+TUmNj38256ysLJsjEZFQ8H/Wi5vJXUSKtsG3bAu47AykCBqnxic2NpbExER++eUX4uLiyjQxpdfrJSsri9OnTwd1tmQpnezsbABOnz5NbKz+xcNBuH1GvF4vv/zyC4mJifofESmj9b5lW1ujKJo+zT4ul4t69eqRnp7Ozp07y/Rcy7I4deoUlStXxuUKt7w1+uTk5HDgwAF27NihX+FhIhw/I263m0aNGoVNPCKRIn9JTbhRUpNPpUqVaN68eZmroDweDwsXLuTiiy8mLi4uSNFJaR0+fJj/+7//Y8mSJVSvXt3ucITw/IxUqlQpLEqNRCKNP6lpZ2sURVNS8ytut5uEhIQyPScmJobs7GwSEhLC5gs7mlWqVImdO3dSqVKlMp9LCQ59RkSc4QSw3bcejiU1+pkiIiIipbIJsIBUoLbNsRRFSY2IiIiUSjhXPYGSGhERESmlcO75BEpqREREpJS+8y3b2BpF8ZTUiIiISKls8S1b2RpF8ZTUiIiIyBllAv5R3FrYGUgJlNSIiIjIGf0AeIEkoI7NsRRHSY2IiIickb/qqTnhN+eTn5IaEREROSN/UhOuVU+gpEZERERKQUmNiIiIOMJW31JJjYiIiES0/G1qwpWSGhERESnRMWCvb11JjYiIiEQsf9VTKlDdzkDOQEmNiIiIlMif1IRzKQ0oqREREZEz2O5bnm1rFGempEZERERKlO5bptkaxZkpqREREZESKakRERERR1BSIyIiIhEvB/jRt66kRkRERCLWbiAbiAPq2xzLmSipERERkWL5q54aATF2BlIKSmpERESkWJHSngaU1IiIiEgJlNSIiIiIIyipEREREUdQUiMiIiKOsMO3VFIjIiIiESsT06UblNSIiIhIBPsRsIBEINXmWEpDSY2IiIgUKX97GpedgZSSkhoREREpkj+paWJnEGWgpEZERESKtMO3jIT2NKCkRkRERIqxw7dUUiMiIiIRzT87dyNboyg9JTUiIiJSpF2+ZUNboyg9JTUiIiJSSDZ5Y9QoqSmjhQsXcsUVV1C/fn1cLheffPJJgceHDh2Ky+UqcOvbt689wYqIiDjcXsALxAF1bY6ltMImqTlx4gTt27dnypQpxW7Tt29f9u7dm3v75z//GcIIRUREooe/6ukswihZOINYuwPw69evH/369Stxm/j4eOrWjZR8UUREJHJFWnsaiJzkC4AFCxZQu3ZtWrZsyW233cbBgwftDklERMSRIjGpCZuSmjPp27cvv//970lLS2P79u3cf//99OvXjyVLlhATE1PkczIzM8nMzMz9OyMjAwCPx4PH4wlYbP59BXKfUn75z4fOSXjQZyS86HyEl3A9HzvdboiJoX5ODh6v19ZYSvveRExSM3jw4Nz1du3ace6559KsWTMWLFjAZZddVuRzJkyYwPjx4wvdP2fOHBITEwMe49y5cwO+Tym7kydPAjB//vygnGcpP31GwovOR3gJt/PxbefOUL8+Gd99x2fp6Wd+QhD5v9fPxGVZlhXkWMrM5XLx8ccfM2DAgBK3S01N5YknnmDEiBFF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KILORzjSOQkvOh/hRecjcKKqobCIiIg4l0pqRERExBGU1IiIiIgjKKkRERERR1BSIyIiIo6gpCaAduzYwU033URaWhqVK1emWbNmPPLII2RlZdkdWlSZMmUKTZo0ISEhga5du7J8+XK7Q4pKEyZMoHPnziQlJVG7dm0GDBjA999/b3dY4vP000/jcrkYPXq03aFEtd27d3PDDTdQs2ZNKleuTLt27fj222/tDitiKakJoM2bN+P1enn55Zf57rvveOGFF5g2bRr333+/3aFFjffff58xY8bwyCOPsGrVKtq3b0+fPn34+eef7Q4t6nz99deMHDmSpUuXMnfuXDweD7179+bEiRN2hxb1VqxYwcsvv8y5555rdyhR7fDhw1x44YXExcXx+eefs3HjRv76179SvXp1u0OLWOrSHWTPPfccU6dO5YcffrA7lKjQtWtXOnfuzN///nfAzPfVsGFD7rjjDu677z6bo4tuv/zyC7Vr1+brr7/m4osvtjucqHX8+HE6duzISy+9xBNPPEGHDh2YNGmS3WFFpfvuu49vvvmGRYsW2R2KY6ikJsiOHj1KjRo17A4jKmRlZbFy5Up69uyZe5/b7aZnz54sWbLExsgEzGcB0OfBZiNHjuTyyy8v8DkRe/znP//h/PPP5w9/+AO1a9fmvPPO45VXXrE7rIimpCaItm3bxuTJkxkxYoTdoUSFAwcOkJOTQ506dQrcX6dOHfbt22dTVAKmxGz06NFceOGFtG3b1u5wotZ7773HqlWrmDBhgt2hCPDDDz8wdepUmjdvzhdffMFtt93GqFGjePPNN+0OLWIpqSmF++67D5fLVeJt8+bNBZ6ze/du+vbtyx/+8AeGDx9uU+Qi4WHkyJFs2LCB9957z+5QotauXbu48847eeedd0hISLA7HMEk+x07duSpp57ivPPO45ZbbmH48OFMmzbN7tAiVqzdAUSCu+++m6FDh5a4TdOmTXPX9+zZQ48ePbjggguYPn16kKMTv1q1ahETE8P+/fsL3L9//37q1q1rU1Ry++23M2vWLBYuXEiDBg3sDidqrVy5kp9//pmOHTvm3peTk8PChQv5+9//TmZmJjExMTZGGH3q1avHOeecU+C+1q1bM3PmTJsiinxKakohNTWV1NTUUm27e/duevToQadOnZgxYwZutwrDQqVSpUp06tSJefPmMWDAAMD8Epo3bx633367vcFFIcuyuOOOO/j4449ZsGABaWlpdocU1S677DLWr19f4L5hw4bRqlUr/vKXvyihscGFF15YaJiDLVu20LhxY5siinxKagJo9+7ddO/encaNG/P888/zyy+/5D6mkoLQGDNmDEOGDOH888+nS5cuTJo0iRMnTjBs2DC7Q4s6I0eO5N133+Xf//43SUlJue2aUlJSqFy5ss3RRZ+kpKRC7ZmqVKlCzZo11c7JJnfddRcXXHABTz31FIMGDWL58uVMnz5dJfwVoKQmgObOncu2bdvYtm1boWJ29ZwPjWuuuYZffvmFhx9+mH379tGhQwdmz55dqPGwBN/UqVMB6N69e4H7Z8yYccbqXJFo0LlzZz7++GPGjRvHY489RlpaGpMmTeL666+3O7SIpXFqRERExBHU4ENEREQcQUmNiIiIOIKSGhEREXEEJTUiIiLiCEpqRERExBGU1IiIiIgjKKkRERERR1BSIyIiIo6gpEZEREQcQUmNiIiIOIKSGhGJWL/88gt169blqaeeyr1v8eLFVKpUiXnz5tkYmYjYQXM/iUhE++yzzxgwYACLFy+mZcuWdOjQgSuvvJKJEyfaHZqIhJiSGhGJeCNHjuTLL7/k/PPPZ/369axYsYL4+Hi7wxKREFNSIyIR79SpU7Rt25Zdu3axcuVK2rVrZ3dIImIDtakRkYi3fft29uzZg9frZceOHXaHIyI2UUmNiES0rKwsunTpQocOHWjZsiWTJk1i/fr11K5d2+7QRCTElNSISES75557+PDDD1m7di1Vq1blkksuISUlhVmzZtkdmoiEmKqfRCRiLViwgEmTJvHWW2+RnJyM2+3mrbfeYtGiRUydOtXu8EQkxFRSIyIiIo6gkhoRERFxBCU1IiIi4ghKakRERMQRlNSIiIiIIyipEREREUdQUiMiIiKOoKRGREREHEFJjYiIiDiCkhoRERFxBCU1IiIi4ghKakRERMQRlNSIiIiII/w/meR/cExdt8EAAAAASUVORK5CYII="/>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=d2137fa2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [91]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">np</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">x</span><span class="o">**</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span> <span class="o">-</span> <span class="n">np</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="mf">0.4</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span> <span class="o">*</span> <span class="n">np</span><span class="o">.</span><span class="n">cos</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">pi</span> <span class="o">*</span> <span class="n">x</span><span class="p">)</span>
-
-
-<span class="n">a</span> <span class="o">=</span> <span class="n">bisection_method</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="o">-</span><span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span><span class="n">tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"A) | Bisección | Raíz aproximada:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-
-<span class="n">b</span> <span class="o">=</span> <span class="n">bisection_method</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span><span class="n">tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"A) | Bisección | Raíz aproximada:"</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-
-<span class="n">c</span> <span class="o">=</span> <span class="n">bisection_method</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span><span class="n">tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"A) | Bisección | Raíz aproximada:"</span><span class="p">,</span> <span class="n">c</span><span class="p">)</span>
-
-<span class="n">d</span> <span class="o">=</span> <span class="n">bisection_method</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mf">2.5</span><span class="p">,</span><span class="n">tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"A) | Bisección | Raíz aproximada:"</span><span class="p">,</span> <span class="n">d</span><span class="p">)</span>
-
-<span class="n">e</span> <span class="o">=</span> <span class="n">bisection_method</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="mf">3.5</span><span class="p">,</span> <span class="mf">3.9</span><span class="p">,</span><span class="n">tol</span><span class="o">=</span><span class="mf">1e-6</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"A) | Bisección | Raíz aproximada:"</span><span class="p">,</span> <span class="n">e</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain" tabindex="0">
-<pre>A) | Bisección | Raíz aproximada: -0.4341421127319336
-A) | Bisección | Raíz aproximada: 0.4506559371948242
-A) | Bisección | Raíz aproximada: 1.7447385787963867
-A) | Bisección | Raíz aproximada: 2.2383203506469727
-A) | Bisección | Raíz aproximada: 3.7090415954589844
-</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=aa4f59d0">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
+<p><center>Tipografía matemática</center></p>
 <table>
 <thead>
 <tr>
-<th>Cero #</th>
-<th>Intervalo</th>
-<th>Resultado</th>
+<th><strong>Nombre</strong></th>
+<th><strong>Comando</strong></th>
+<th><strong>Salida</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>1</td>
-<td>(-1,0)</td>
-<td>-0.4341421127319336</td>
+<td>Número simple</td>
+<td><code>$123$</code></td>
+<td>$123$</td>
 </tr>
 <tr>
-<td>2</td>
-<td>(0, 1)</td>
-<td>0.4506559371948242</td>
+<td>Decimal</td>
+<td><code>$3.14$</code></td>
+<td>$3.14$</td>
 </tr>
 <tr>
-<td>3</td>
-<td>(1, 2)</td>
-<td>1.7447385787963867</td>
+<td>Fracción</td>
+<td><code>$\frac{a}{b}$</code></td>
+<td>$\frac{a}{b}$</td>
 </tr>
 <tr>
-<td>4</td>
-<td>(2, 2.5)</td>
-<td>2.2383203506469727</td>
+<td>Potencia (exponente)</td>
+<td><code>$x^2$</code></td>
+<td>$x^2$</td>
 </tr>
 <tr>
-<td>5</td>
-<td>(3.5, 4.0)</td>
-<td>3.7090415954589844</td>
+<td>Raíz cuadrada</td>
+<td><code>$\sqrt{9}$</code></td>
+<td>$\sqrt{9}$</td>
+</tr>
+<tr>
+<td>Raíz n-ésima</td>
+<td><code>$\sqrt[3]{8}$</code></td>
+<td>$\sqrt[3]{8}$</td>
+</tr>
+<tr>
+<td>Notación científica</td>
+<td><code>$5 \times 10^6$</code></td>
+<td>$5 \times 10^6$</td>
+</tr>
+<tr>
+<td>Multiplicación</td>
+<td><code>$a \times b$</code></td>
+<td>$a \times b$</td>
+</tr>
+<tr>
+<td>División (símbolo ÷)</td>
+<td><code>$a \div b$</code></td>
+<td>$a \div b$</td>
+</tr>
+<tr>
+<td>Igual</td>
+<td><code>$a = b$</code></td>
+<td>$a = b$</td>
+</tr>
+<tr>
+<td>No igual</td>
+<td><code>$a \neq b$</code></td>
+<td>$a \neq b$</td>
+</tr>
+<tr>
+<td>Menor que</td>
+<td><code>$a &lt; b$</code></td>
+<td>$a &lt; b$</td>
+</tr>
+<tr>
+<td>Mayor que</td>
+<td><code>$a &gt; b$</code></td>
+<td>$a &gt; b$</td>
+</tr>
+<tr>
+<td>Menor o igual que</td>
+<td><code>$a \leq b$</code></td>
+<td>$a \leq b$</td>
+</tr>
+<tr>
+<td>Mayor o igual que</td>
+<td><code>$a \geq b$</code></td>
+<td>$a \geq b$</td>
+</tr>
+<tr>
+<td>Aproximadamente igual</td>
+<td><code>$a \approx b$</code></td>
+<td>$a \approx b$</td>
+</tr>
+<tr>
+<td>Más-menos (±)</td>
+<td><code>$a \pm b$</code></td>
+<td>$a \pm b$</td>
+</tr>
+<tr>
+<td>Porcentaje</td>
+<td><code>$50\%$</code></td>
+<td>$50\%$</td>
+</tr>
+<tr>
+<td>Proporcionalidad</td>
+<td><code>$a \propto b$</code></td>
+<td>$a \propto b$</td>
+</tr>
+<tr>
+<td>Pertenencia (∈)</td>
+<td><code>$a \in B$</code></td>
+<td>$a \in B$</td>
+</tr>
+<tr>
+<td>No pertenencia (∉)</td>
+<td><code>$a \notin B$</code></td>
+<td>$a \notin B$</td>
+</tr>
+<tr>
+<td>Suma</td>
+<td><code>$\sum_{i=1}^{n} i$</code></td>
+<td>$\sum_{i=1}^{n} i$</td>
+</tr>
+<tr>
+<td>Producto (∏)</td>
+<td><code>$\prod_{i=1}^{n} i$</code></td>
+<td>$\prod_{i=1}^{n} i$</td>
+</tr>
+<tr>
+<td>Límite</td>
+<td><code>$\lim_{x \to 0} f(x)$</code></td>
+<td>$\lim_{x \to 0} f(x)$</td>
+</tr>
+<tr>
+<td>Derivada simple</td>
+<td><code>$\frac{d}{dx}f(x)$</code></td>
+<td>$\frac{d}{dx}f(x)$</td>
+</tr>
+<tr>
+<td>Derivada parcial</td>
+<td><code>$\frac{\partial}{\partial x}f(x,y)$</code></td>
+<td>$\frac{\partial}{\partial x}f(x,y)$</td>
+</tr>
+<tr>
+<td>Integral</td>
+<td><code>$\int_a^b f(x)\,dx$</code></td>
+<td>$\int_a^b f(x)\,dx$</td>
+</tr>
+<tr>
+<td>Paréntesis automáticos</td>
+<td><code>$\left( \frac{a}{b} \right)$</code></td>
+<td>$\left( \frac{a}{b} \right)$</td>
+</tr>
+<tr>
+<td>Corchetes automáticos</td>
+<td><code>$\left[ \frac{a}{b} \right]$</code></td>
+<td>$\left[ \frac{a}{b} \right]$</td>
+</tr>
+<tr>
+<td>Llaves automáticas</td>
+<td><code>$\left\{ \frac{a}{b} \right\}$</code></td>
+<td>$\left\{ \frac{a}{b} \right\}$</td>
+</tr>
+<tr>
+<td>Vector</td>
+<td><code>$\vec{v}$</code></td>
+<td>$\vec{v}$</td>
+</tr>
+<tr>
+<td>Matriz simple</td>
+<td><code>$\begin{matrix}a &amp; b\\c &amp; d\end{matrix}$</code></td>
+<td>$\begin{matrix}a &amp; b\\c &amp; d\end{matrix} $</td>
 </tr>
 </tbody>
 </table>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=996b549c">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ol start="7">
-<li>La función 𝑓(𝑥) = $ 𝑥^{1/3} $ tiene raíz en 𝑥 = 0. Usando el punto de inicio de 𝑥 = 1 y $𝑝_0$ = 5, $𝑝_1$ = 0.5 para el método de secante, compare los resultados de los métodos de la secante y de Newton.</li>
-</ol>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=58e857b0">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [100]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
-<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
-
-<span class="c1"># Definir la función f(x)</span>
-<span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
-
-<span class="c1"># Definir el rango de valores para x</span>
-<span class="n">x</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">linspace</span><span class="p">(</span><span class="o">-</span><span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">800</span><span class="p">)</span>
-<span class="n">y</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">x</span><span class="p">)</span>
-
-<span class="c1"># Graficar la función con la línea de puntos</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">plot</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">label</span><span class="o">=</span><span class="sa">r</span><span class="s1">'$f(x) =𝑥^{1/3} $'</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'cyan'</span><span class="p">)</span>
-
-<span class="c1"># Agregar título y etiquetas</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s1">'Gráfico de f(x)'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">xlabel</span><span class="p">(</span><span class="s1">'x'</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">ylabel</span><span class="p">(</span><span class="s1">'f(x)'</span><span class="p">)</span>
-
-<span class="c1"># Mostrar la cuadrícula y los ejes</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">)</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axhline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>  <span class="c1"># Eje X</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">axvline</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">'black'</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">0.8</span><span class="p">)</span>  <span class="c1"># Eje Y</span>
-
-<span class="c1"># Agregar leyenda</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">legend</span><span class="p">()</span>
-
-<span class="c1"># Mostrar la gráfica</span>
-<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\Usuario\AppData\Local\Temp\ipykernel_26608\1044113373.py:6: RuntimeWarning: invalid value encountered in power
-  return x**(1/3)
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedImage jp-OutputArea-output" tabindex="0">
-<img alt="No description has been provided for this image" class="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAjcAAAHHCAYAAABDUnkqAAAAOnRFWHRTb2Z0d2FyZQBNYXRwbG90bGliIHZlcnNpb24zLjEwLjMsIGh0dHBzOi8vbWF0cGxvdGxpYi5vcmcvZiW1igAAAAlwSFlzAAAPYQAAD2EBqD+naQAAU3VJREFUeJzt3X18z/X+x/HHd9cWc22GuYhyEZmLw1E5KLPwU051KE6JKEVxdnKiKzldrHSSTim6QKdOh1TUwcHIoiiFFUW5mIsyc21sbN/t+/n98dm+zC5s8/3u8/1+9rzfbrtt38/VXi9fs6f35/35fByGYRiIiIiI2ESA1QWIiIiIeJLCjYiIiNiKwo2IiIjYisKNiIiI2IrCjYiIiNiKwo2IiIjYisKNiIiI2IrCjYiIiNiKwo2IeMTKlSt59tlnyczMtLoUEankFG5E5JLt3LmTW2+9lcjISMLDwwutX7ZsGTExMYSFheFwODhx4gR33303TZs2rfhii+CNWorqOV+/fv0YNWpUmY85c+ZMGjduTFZWlgcrFbEfhRuRSiYlJYWxY8dy5ZVXEh4eTnh4OG3atGHMmDH88MMPZT5eVlYWgwYN4sEHH2TkyJGF1h89epRBgwZRpUoVZsyYwXvvvcdll13miVZ8Vkk9f/XVV6xYsYJHHnmkzMe9++67yc7OZtasWZ4uWcRWHHq2lEjlsXjxYgYPHkxQUBBDhw6lffv2BAQEsH37dj755BP27t1LSkoKTZo0KfUxN23axFdffcWDDz5Y5Pply5bRt29fEhMT6d27t3u50+nE5XIRGhp6yX1dqrvvvpukpCT27NnjkeMV1zPAwIEDOXPmDMuXLy/XsR955BHmz59PSkoKDofDE+WK2E6Q1QWISMXYtWsXt99+O02aNGHVqlVERUUVWP/CCy/w+uuvExBQ8oBuRkZGgZGXjh070rFjx2K3P3ToEAA1atQosDw4OLiMHfiP4no+dOgQS5YsYebMmeU+9qBBg5g6dSqrV6/m+uuvv5QyRWxLp6VEKompU6eSkZHBnDlzCgUbgKCgIB566CGio6Pdy+6++26qVq3Krl276NevH9WqVWPo0KEArF27lj/96U80btyY0NBQoqOj+ctf/sKZM2fc+/fs2ZNhw4YB8Lvf/Q6Hw8Hdd9/tPvaF81xcLhevvPIK7dq1IywsjLp163LjjTfy3XffubfJycnh6aefpnnz5oSGhtK0aVMeffTRUs9DWbRoEW3btiUsLIy2bduycOHCIrdzuVxMnz6dq666irCwMCIjI7nvvvs4fvx4iccvqeclS5aQk5NTYDTHMAx69epF3bp13aEIIDs7m3bt2tG8eXMyMjLcyzt16kStWrX49NNPS9WvSGWkkRuRSmLx4sW0aNGCrl27lmm/nJwc4uLiuO666/jHP/7hnjC8YMECMjIyuP/++6lduzbffPMNr776Kr/++isLFiwA4LHHHqNly5a8+eab/P3vf6dZs2Y0b9682O91zz33MHfuXPr27cvIkSPJyclh7dq1fP3113Tu3BmAkSNH8u6773Lbbbfx17/+lW+++YaEhAS2bdtWbFDJt2LFCm699VbatGlDQkICR48eZfjw4TRq1KjQtvfddx9z585l+PDhPPTQQ6SkpPDaa6+xefNmvvrqq2JHnkrqed26ddSuXbvAaT+Hw8Hs2bO5+uqrGT16NJ988gkAkydP5scffyQpKanQHKWOHTvy1VdfldirSKVmiIjtnTx50gCMgQMHFlp3/Phx4/Dhw+6PzMxM97phw4YZgDFx4sRC+50+fbrQsmeeecZwOBzG3r173cvmzJljAMa3335bYNthw4YZTZo0cb/+/PPPDcB46KGHCh3X5XIZhmEYycnJBmCMHDmywPqHH37YAIzPP/+8mD8BU0xMjBEVFWWcOHHCvWzFihUGUKCWtWvXGoDx73//u8D+y5YtK3L5hYrr+brrrjM6depU5D6zZs0yAOP99983vv76ayMwMNAYP358kdvee++9RpUqVUqsQaQy02kpkUogPT0dgKpVqxZa17NnT+rWrev+mDFjRqFt7r///kLLzh9NcLlcnD17lri4OAzDYPPmzWWu8eOPP8bhcDB58uRC6/Inzi5duhSA+Pj4Auv/+te/AuZpn+KkpqaSnJzMsGHDqF69unt5bGwsbdq0KbDtggULqF69OrGxsRw5csT90alTJ6pWrcrq1avL3B+YV1HVrFmzyHX33nsvcXFxPPjgg9x55500b96c5557rshta9asyZkzZ3RPIZFi6LSUSCVQrVo1AE6fPl1o3axZszh16hRpaWn8+c9/LrQ+KCioyNM2Bw4c4JlnnuG///0vqamp5ObmutedPHmyzDXu2rWLBg0aUKtWrWK32bt3LwEBAbRo0aLA8vr161OjRg327t1b4r4AV1xxRaF1LVu2ZNOmTe7XO3bs4OTJk9SrV6/IY50/N6asjBIuUH3nnXdo3rw5O3bsYN26dVSpUqXEY+hqKZGiKdyIVALVq1cnKiqKrVu3FlqXPwenuMugQ0NDC11B5XK5iI2N5ejRozz22GO0adOGyy67jP379zNo0CBcLpfHezift3+pu1wu6tWrx7///e8i19etW7dcx61du3aJE5KTkpLcE6O3bNlCt27ditzu+PHjhIeHFxt+RCo7hRuRSqJ///68/fbbbNiwgS5dulzSsbZs2cJPP/3E+++/7756Cs6d/iqP5s2bs3z5co4dO1bs6E2TJk1wuVzs2LGD1q1bu5enpaVx4sSJEu/Pk79ux44dhdb9/PPPhWpZuXIl1157rUcDRKtWrfj444+LXJeamsqDDz5Inz59CAkJ4eGHHyYuLq7InlJSUgr0LyIFac6NSCXxt7/9jfDwcEaMGEFaWlqh9SWdLrlQ/siJ0+l0L3O5XLz88svlru/WW2/FMAymTJlSbG39+vUDYPr06QXWT5s2DTADXHGioqKIiYnh3XffLXDaLDExkZ9++qnAtoMGDSI3N5enn3660HFycnIKPEqhLLp168bx48fZvXt3oXWjRo3C5XLxzjvv8OabbxIUFMQ999xT5PuyadMmrrnmmnLVIFIZaORGpJK44oor+OCDD7jjjjto2bKl+w7FhmGQkpLCBx98QEBAQJHzay7UunVrLr/8ch5++GEOHDhAtWrV+Pjjjy9p5KZXr17ceeed/POf/2THjh3ceOONuFwu1q5dS69evRg7dizt27dn2LBhvPnmm5w4cYIePXqwYcMG3n33XQYOHEivXr1K/B4JCQn079+f6667jhEjRnDs2DFeffVVrrrqqgLzkXr06MF9991HQkICycnJ9OnTh+DgYHbs2MGCBQt45ZVXuO2228rcY//+/QkKCmLlypXce++97uVz5sxhyZIlzJ071/3n/+qrr/LnP/+ZN954gwceeMC97caNGzl27Bg333xzmb+/SKVh3YVaImKFnTt3Gvfff7/RokULIywszKhSpYrRqlUrY/To0UZycnKBbYcNG2ZcdtllRR5n69atxvXXX29UrVrVqFu3rjF69Ghjy5YtBmDMmTPHvV1pLwU3DMPIyckxXnzxRaNVq1ZGSEiIUbduXaNv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IUN45JFHCAwMLLR9VlYWWVlZ7tfp6ekAOJ1OnE6nR/vJP543jm0ADwYG4goI4DaXi2tyc/Hsd7i48/uzK7v3qP78n917VH/+z1s9luV4loabI0eOkJubS2RkZIHlkZGRbN++vch9du/ezeeff87QoUNZunQpO3fu5IEHHsDpdDJ58uRC2yckJDBlypRCy1esWEF4eLhnGsmTmZkJwOrVqz1+7C8bNGDt735HSE4OcZ9/ztIzZzx6/LJITEy07HtXFLv3qP78n917VH/+z9M95v+OLQ2/O7PhcrmoV68eb775JoGBgXTq1InffvuNF198schwM2nSJOLj492v09PTiY6Opk+fPkRERHi0tqNHjwLQq1cvateu7bHjZgIPBplv1SMOB8N69fLYscvC6XSSmJhIbGys+5Sg3di9R/Xn/+zeo/rzf97qMf/MS2lYGm7q1KlDYGAgaWlpBZanpaVRv379IveJiooiODi4wCmo1q1bc/DgQbKzswkJCSmwfWhoKKGhoYWOExwc7PG/WPnH8/Sx3wD2A42BiYGBBBdx+q0ieePPztfYvUf15//s3qP683+e7rEsx7L0UvCQkBA6derEqlWr3MtcLherVq2iW7duRe5z7bXXsnPnTlwul3vZL7/8QlRUVKFgYwfHgRfyvn4G8OzJLhEREfux/D438fHxvPXWW7z77rts27aN+++/n4yMDPfVU3fddVeBCcf3338/x44dY9y4cfzyyy8sWbKE5557jjFjxljVglc9D5wA2gFDrC1FRETEL1g+52bw4MEcPnyYJ598koMHDxITE8OyZcvck4z37dtHQMC5DBYdHc3y5cv5y1/+wtVXX03Dhg0ZN24cjzzyiFUteM1vmJd8g3nDPmtPRomIiPgHy8MNwNixYxk7dmyR65KSkgot69atG19//bWXq7Le34GzwHVAf4trERER8ReWn5aSou0FZud9nYCeHyUiIlJaCjc+6gXMp35fjzlyIyIiIqWjcOODfgPeyfv6SSsLERER8UMKNz5oKpANdAd6WFyLiIiIv1G48TEHgTfzvtaojYiISNkp3PiYVzGvkPo9cIPFtYiIiPgjhRsfkgHMzPt6ArpCSkREpDwUbnzIv4BjwOXAzRbXIiIi4q8UbnyEC3g57+vx6G7EIiIi5aVw4yOWADuAGsBwa0sRERHxawo3PiJ/1OY+oKqV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w40JEyYY27ZtM2bMmGEEBgYay5Yts6qFiyprjy+//LKxaNEiY8eOHcaWLVuMcePGGQEBAcbKlSutaqFY999/v1G9enUjKSnJSE1NdX9kZma6t/H3n8Hy9OhPP4cTJ040vvjiCyMlJcX44YcfjIkTJxoOh8NYsWKFYRj+//4ZRtl79Kf3rzgXXi3lC++jwk0Zvfrqq0bjxo2NkJAQo0uXLsbXX3/tXtejRw9j2LBhBbb/8MMPjSuvvNIICQkxrrrqKmPJkiUVXHHZlKW/8ePHu7eNjIw0+vXrZ2zatMmCqksn/7LnCz/yexo2bJjRo0ePQvvExMQYISEhxuWXX27MmTOnwusui7L2+MILLxjNmzc3wsLCjFq1ahk9e/Y0Pv/8c2uKv4ii+gIKvCf+/jNYnh796edwxIgRRpMmTYyQkBCjbt26xg033OD+pW8Y/v/+GUbZe/Sn9684F4YbX3gfHYZhGN4bFxIRERGpWJpzIyIiIraicCMiIiK2onAjIiIitqJwIyIiIraicCMiIiK2onAjIiIitqJwIyIiIraicCMiIiK2onAjIiIitqJwIyIiIraicCMifu/w4cPUr1+f5557zr1s3bp1hISEFHoasYjYn54tJSK2sHTpUgYOHMi6deto2bIlMTEx3HzzzUybNs3q0kSkginciIhtjBkzhpUrV9K5c2e2bNnCt99+S2hoqNVliUgFU7gREds4c+YMbdu2Zf/+/WzcuJF27dpZXZKIWEBzbkTENnbt2sWBAwdwuVzs2bPH6nJExCIauRERW8jOzqZLly7ExMTQsmVLpk+fzpYtW6hXr57VpYlIBVO4ERFbmDBhAh999BHff/89VatWpUePHlSvXp3FixdbXZqIVDCdlhIRv5eUlMT06dN57733iIiIICAggPfee4+1a9fyxhtvWF2eiFQwjdyIiIiIrWjkRkRERGxF4UZERERsReFGREREbEXhRkRERGxF4UZERERsReFGREREbEXhRkRERGxF4UZERERsReFGREREbEXhRkRERGxF4UZERERsReFGREREbOX/AT3efxUvBuZiAAAAAElFTkSuQmCC"/>
-</div>
-</div>
-</div>
-</div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell" id="cell-id=53900920">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In [96]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-<div class="cm-editor cm-s-jupyter">
-<div class="highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">f</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
-
-<span class="k">def</span> <span class="nf">fprime</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
-    <span class="k">return</span> <span class="p">(</span><span class="mi">1</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span> <span class="o">*</span> <span class="n">x</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">2</span><span class="o">/</span><span class="mi">3</span><span class="p">)</span>
-<span class="n">x0</span> <span class="o">=</span> <span class="mi">1</span>
-<span class="n">a</span> <span class="o">=</span> <span class="n">newton</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="p">,</span> <span class="n">fprime</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"-&gt; | Newton-Raphson | Raíz aproximada:"</span><span class="p">,</span> <span class="n">a</span><span class="p">)</span>
-
-<span class="n">b</span> <span class="o">=</span> <span class="n">secante</span><span class="p">(</span><span class="n">f</span><span class="p">,</span> <span class="n">x0</span><span class="o">=</span><span class="mi">5</span><span class="p">,</span> <span class="n">x1</span><span class="o">=</span><span class="mf">0.5</span><span class="p">)</span>
-<span class="nb">print</span><span class="p">(</span><span class="s2">"-&gt; | Secante | Raíz aproximada:"</span><span class="p">,</span> <span class="n">b</span><span class="p">)</span>
-</pre></div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-<div class="jp-OutputArea jp-Cell-outputArea">
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>C:\Users\Usuario\AppData\Local\Temp\ipykernel_26608\392766237.py:2: RuntimeWarning: invalid value encountered in scalar power
-  return x**(1/3)
-C:\Users\Usuario\AppData\Local\Temp\ipykernel_26608\392766237.py:5: RuntimeWarning: invalid value encountered in scalar power
-  return (1/3) * x**(-2/3)
-</pre>
-</div>
-</div>
-<div class="jp-OutputArea-child">
-<div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="application/vnd.jupyter.stderr" tabindex="0">
-<pre>
-<span class="ansi-red-intense-fg ansi-bold">---------------------------------------------------------------------------</span>
-<span class="ansi-red-intense-fg ansi-bold">RuntimeError</span>                              Traceback (most recent call last)
-Cell <span class="ansi-green-intense-fg ansi-bold">In[96], line 7</span>
-<span class="ansi-green-fg">      5</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> (<span style="color: rgb(98,98,98)">1</span><span style="color: rgb(98,98,98)">/</span><span style="color: rgb(98,98,98)">3</span>) <span style="color: rgb(98,98,98)">*</span> x<span style="color: rgb(98,98,98)">*</span><span style="color: rgb(98,98,98)">*</span>(<span style="color: rgb(98,98,98)">-</span><span style="color: rgb(98,98,98)">2</span><span style="color: rgb(98,98,98)">/</span><span style="color: rgb(98,98,98)">3</span>)
-<span class="ansi-green-fg">      6</span> x0 <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(98,98,98)">1</span>
-<span class="ansi-green-intense-fg ansi-bold">----&gt; 7</span> a <span style="color: rgb(98,98,98)">=</span> <span class="ansi-yellow-bg">newton</span><span class="ansi-yellow-bg">(</span><span class="ansi-yellow-bg">f</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">x0</span><span class="ansi-yellow-bg">,</span><span class="ansi-yellow-bg"> </span><span class="ansi-yellow-bg">fprime</span><span class="ansi-yellow-bg">)</span>
-<span class="ansi-green-fg">      8</span> <span style="color: rgb(0,135,0)">print</span>(<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">-&gt; | Newton-Raphson | Raíz aproximada:</span><span style="color: rgb(175,0,0)">"</span>, a)
-<span class="ansi-green-fg">     10</span> b <span style="color: rgb(98,98,98)">=</span> secante(f, x0<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">5</span>, x1<span style="color: rgb(98,98,98)">=</span><span style="color: rgb(98,98,98)">0.5</span>)
-
-File <span class="ansi-green-intense-fg ansi-bold">~\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\scipy\optimize\_zeros_py.py:391</span>, in <span class="ansi-cyan-fg">newton</span><span class="ansi-blue-intense-fg ansi-bold">(func, x0, fprime, args, tol, maxiter, fprime2, x1, rtol, full_output, disp)</span>
-<span class="ansi-green-fg">    388</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> disp:
-<span class="ansi-green-fg">    389</span>     msg <span style="color: rgb(98,98,98)">=</span> (<span style="color: rgb(175,0,0)">"</span><span style="color: rgb(175,0,0)">Failed to converge after </span><span class="ansi-bold" style="color: rgb(175,95,135)">%d</span><span style="color: rgb(175,0,0)"> iterations, value is </span><span class="ansi-bold" style="color: rgb(175,95,135)">%s</span><span style="color: rgb(175,0,0)">.</span><span style="color: rgb(175,0,0)">"</span>
-<span class="ansi-green-fg">    390</span>            <span style="color: rgb(98,98,98)">%</span> (itr <span style="color: rgb(98,98,98)">+</span> <span style="color: rgb(98,98,98)">1</span>, p))
-<span class="ansi-green-intense-fg ansi-bold">--&gt; 391</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">RuntimeError</span>(msg)
-<span class="ansi-green-fg">    393</span> <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> _results_select(full_output, (p, funcalls, itr <span style="color: rgb(98,98,98)">+</span> <span style="color: rgb(98,98,98)">1</span>, _ECONVERR), method)
-
-<span class="ansi-red-intense-fg ansi-bold">RuntimeError</span>: Failed to converge after 50 iterations, value is nan.</pre>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=b56e8df2">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
-<ul>
-<li><p>Newton: Diverge rápidamente, alternando entre valores positivos y negativos que se duplican en cada iteración.</p>
-</li>
-<li><p>Secante: También oscila, pero las magnitudes de las iteraciones no crecen tan rápidamente. Sin embargo, tampoco converge a la raíz</p>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</div>
-<div class="jp-Cell jp-MarkdownCell jp-Notebook-cell" id="cell-id=7ab36e2a">
-<div class="jp-Cell-inputWrapper" tabindex="0">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
-</div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput" data-mime-type="text/markdown">
 </div>
 </div>
 </div>
