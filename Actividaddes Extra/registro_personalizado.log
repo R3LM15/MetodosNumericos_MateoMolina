@@ -2,3 +2,13 @@
 2025-07-10 13:01:10 | INFO | 1845324455.py:69 | [32mTodo funciona correctamente[0m
 2025-07-10 13:01:10 | WARNING | 1845324455.py:70 | [33mAdvertencia: algo podría salir mal[0m
 2025-07-10 13:01:10 | ERROR | 1845324455.py:71 | [31mError detectado[0m
+2025-07-10 13:02:36 | DEBUG | 2665130275.py:68 | [36mDepuración activa[0m
+2025-07-10 13:02:36 | DEBUG | 2665130275.py:68 | [36m[36mDepuración activa[0m[0m
+2025-07-10 13:02:36 | INFO | 2665130275.py:69 | [32mTodo funciona correctamente[0m
+2025-07-10 13:02:36 | INFO | 2665130275.py:69 | [32m[32mTodo funciona correctamente[0m[0m
+2025-07-10 13:02:36 | WARNING | 2665130275.py:70 | [33mAdvertencia: algo podría salir mal[0m
+2025-07-10 13:02:36 | WARNING | 2665130275.py:70 | [33m[33mAdvertencia: algo podría salir mal[0m[0m
+2025-07-10 13:02:36 | ERROR | 2665130275.py:71 | [31mError detectado[0m
+2025-07-10 13:02:36 | ERROR | 2665130275.py:71 | [31m[31mError detectado[0m[0m
+2025-07-10 13:02:36 | CRITICAL | 2665130275.py:72 | [35m[1m¡Error crítico! Enviado a Telegram [0m
+2025-07-10 13:02:36 | CRITICAL | 2665130275.py:72 | [35m[1m[35m[1m¡Error crítico! Enviado a Telegram [0m[0m
