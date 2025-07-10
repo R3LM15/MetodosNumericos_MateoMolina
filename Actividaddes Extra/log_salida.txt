@@ -1,0 +1,2 @@
+2025-07-10 12:15:31,053 - DEBUG - Este mensaje se guarda en el archivo.
+2025-07-10 12:15:31,053 - WARNING - Advertencia guardada en archivo.

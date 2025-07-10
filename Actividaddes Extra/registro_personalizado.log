@@ -1,0 +1,4 @@
+2025-07-10 13:01:10 | DEBUG | 1845324455.py:68 | [36mDepuración activa[0m
+2025-07-10 13:01:10 | INFO | 1845324455.py:69 | [32mTodo funciona correctamente[0m
+2025-07-10 13:01:10 | WARNING | 1845324455.py:70 | [33mAdvertencia: algo podría salir mal[0m
+2025-07-10 13:01:10 | ERROR | 1845324455.py:71 | [31mError detectado[0m
